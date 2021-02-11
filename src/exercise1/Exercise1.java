@@ -17,6 +17,7 @@ public class Exercise1 {
              temps[i]=in.nextInt();
        }
        System.out.println(calcAvg(temps));
+       Sustem.out.println("Hello; i am Gagan");
     }
     
     
