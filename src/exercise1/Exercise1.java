@@ -17,7 +17,8 @@ public class Exercise1 {
              temps[i]=in.nextInt();
        }
        System.out.println(calcAvg(temps));
-       Sustem.out.println("Hello; i am Gagan");
+       System.out.println("Hello; i am Gagan");
+       System.out.println("Maxmium temperature is : "+calcMax(temps));
     }
     
     
@@ -35,6 +36,21 @@ public class Exercise1 {
         System.out.println("Number of accepted temperatures: "+num);
         System.out.println("Average is:");
         return average;
+    }
+    
+    static int calcMax(int []temps){
+        int max=0;
+        for(int i=0;i<13;i++){
+            
+            if(temps[i]>temps[i+1]){
+                max=temps[i];
+                temps[i]=temps[i+1];
+                temps[i+1]=max;
+            
+            } 
+        }
+        int maxtemps=temps[13];
+        return maxtemps;
     }
     
 }
