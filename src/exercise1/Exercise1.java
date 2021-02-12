@@ -18,7 +18,7 @@ public class Exercise1 {
        }
        System.out.println(calcAvg(temps));
        System.out.println("Hello; i am Gagan");
-       System.out.println("Maxmium temperature is : "+calcMax(temps));
+       System.out.println("Maximum temperature is : "+calcMax(temps));
     }
     
     
